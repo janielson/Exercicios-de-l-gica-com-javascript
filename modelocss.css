@@ -68,3 +68,19 @@ body {
 .content-logica button:active{
     opacity: 0.6;
 }
+
+
+
+
+
+
+.choiceOneOperation {
+    display: block;
+    margin-top: 10px;
+    padding: 13px;
+    background-color: rgba(0, 0, 0, 0.183);
+
+}
+input[type="radio"] {
+    vertical-align: middle; /* Alinha verticalmente com o texto */
+}
