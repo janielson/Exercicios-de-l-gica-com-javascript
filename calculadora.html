@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecalc.css">
+    <title>CALCULADORA BÁSICA</title>
+</head>
+<body>
+    <h2> | CALCULADORA BÁSICA COM HTML, CSS E JAVASCRIPT |</h2>
+    <section class="container-calculation">
+        <h3> | realizar operação |</h3>
+        <p class="result"></p>
+        <table class="container-table">
+           <tr>
+            <td><button class="buttoms" onclick="clean()">c</button></td>
+            <td><button class="buttoms" onclick="backDelete()"><</button></td>
+            <td><button class="buttoms" onclick="insert('/')">/</button></td>
+            <td><button class="buttoms" onclick="insert('*')">x</button></td>
+           </tr>
+           <tr>
+            <td><button class="buttoms" onclick="insert(7)">7</button></td>
+            <td><button class="buttoms" onclick="insert(8)">8</button></td>
+            <td><button class="buttoms" onclick="insert(9)">9</button></td>
+            <td><button class="buttoms" onclick="insert('-')">-</button></td>
+           </tr>
+           <tr>
+            <td><button class="buttoms" onclick="insert(4)">4</button></td>
+            <td><button class="buttoms" onclick="insert(5)">5</button></td>
+            <td><button class="buttoms" onclick="insert(6)">6</button></td>
+            <td><button class="buttoms" onclick="insert('+')">+</button></td>
+           </tr>
+           <tr>
+            <td><button class="buttoms" onclick="insert(1)">1</button></td>
+            <td><button class="buttoms" onclick="insert(2)">2</button></td>
+            <td><button class="buttoms" onclick="insert(3)">3</button></td>
+            <td rowspan="2"><button class="buttoms" id="valueIgual" onclick="calcular()">=</button></td>
+           </tr>
+           <tr>
+            <td colspan="2"><button class="buttoms" id="valueZero" onclick="insert(0)">0</button></td>
+            <td><button class="buttoms" onclick="insert('.')">.</button></td>
+           </tr>
+        </table>
+    </section>
+
+    <script src="./calculadora.js"></script>
+</body>
+</html>
