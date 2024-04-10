@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+
+
+/* para que possamos usar o grid com precisão e com bons aliamentos usamos da seguinte forma
+criamos o container do grid verificamos o tamanho que o container irar ter e dividimos o valor de lagura e altura 
+por 8 para mobile ou 12 para descktop. Assim ativamos as linhas do grid no especionar do navegador e verificamos como as nossa divs
+estão posicionadas.
+
+dessa forma podemos alinhar nossos elementos de forma precisa e alinhadas.
+nesse exemplo usamos o body para medir as  dimensões do container principal do bloco-1...
+*/
+
+
+
+body {
+width: 1920px; 
+height: 1080px;
+display: grid;
+grid-template-columns: repeat(160,12px);
+grid-template-rows:repeat(90,12px) ;
+
+}
+
+.bloco-1 {
+width: 200px;
+height: 100px;
+background-color: aqua;
+grid-column: 11;
+grid-row: 4;
+
+}
